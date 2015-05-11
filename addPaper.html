@@ -1,0 +1,75 @@
+
+<html>
+	<head>
+		<title>GUI Draft</title>
+		<style>
+		#header {
+    background-color:purple;
+    color:black;
+    text-align:center;
+    padding:5px;
+}
+#section {
+background-color:pink;
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+</style>
+	</head>
+	<body>
+	
+	<div id="header"> 
+		<h1>ADD PAPER</h1>
+		</div>
+		<br>
+<div id="section">
+		
+		<form action="SEDBPROCESS.php"id="papfrm" method="post"> 
+		Title: <input type="text" name="title"> <br><br>
+		Author: <input type="text" name="author"> <br><br>
+		Journal: <input type="text" name="journal"> <br><br>
+		Publication Date: <input type="date" value="date" name="date"> <br><br>
+		Abstract: <textarea name="abstract" form="papfrm"> </textarea> <br><br>
+		Paper Link: <input type="text" name="link"> <br><br> 
+		Credibility Rating: <select name="rating">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							</select> <br><br>
+		Reason for given Rating: <textarea name="reason" form="papfrm"> </textarea> <br><br> 
+		Who Rated it: <input type="text" name="aurate"> <br><br>
+		Research Level: <select name="researchL">
+						<option value="high">High</option>
+						<option value="medium">Medium</option> 
+						<option value="Low">Low</option> 
+						</select><br><br>
+		Software Development Methodology:<input type="text" name="methodology" value="name"> &nbsp; <textarea name="methoddesc" form="papfrm">Description</textarea> <br><br>
+		Standard Practise(Investigated): <input type="text" name="practise" value="name"> &nbsp; <textarea name="pracdesc" form="papfrm">Description</textarea><br><br>
+		Benefit being Tested: <textarea name="benefits" form="papfrm"></textarea><br><br> 
+		Context of the Study: <textarea name="context" form="papfrm"></textarea><br><br>
+		Result of the Study:  <textarea name="result" form="papfrm"></textarea><br><br>
+		Integrity of Implementation: <textarea name="integrity" form="papfrm"></textarea><br><br>
+		Confidence Rating: <select name="conrating">
+							<option value="one">1</option>
+							<option value="two">2</option>
+							<option value="three">3</option>
+							<option value="four">4</option>
+							<option value="five">5</option>
+							</select> <br><br>
+		Reason for given Rating: <textarea name="conreason" form="papfrm"> </textarea> <br><br> 
+		Who Rated it: <input type="text" name="conrate"> <br><br>
+		Research Question: <textarea name="reques" form="papfrm"></textarea><br><br>
+		Research Method: <input type="text" name="method"> <br><br>
+		Research Metrics: <textarea name="metrics" form="papfrm"></textarea><br><br>
+		Nature of participants: <input type="text" name="participants"> <br><br>
+		<input type="submit" name="post" value="Submit">								  
+										  
+		</form>
+		
+		</div>
+	
+	</body>
+</html>
