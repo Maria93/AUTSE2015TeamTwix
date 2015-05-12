@@ -5,15 +5,37 @@ body {
     margin-left: 60px;
     margin-right: 60px;
     margin-top: 0%;
+    background-color: #b0c4de;
     border-bottom: 10px solid #fff;
     border-right: 10px solid #0094ff;
     border-left: 10px solid #0094ff;
 }
 
-p{ line-height: 120%;
-   text-indent: 30px;
-   color: #ffffff;
-   font-family: Lobster, Ubuntu, Cabin, Tahoma, sans-serif;}
+div {
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    width: 100%;
+}
+
+#header {
+    background-color:#026b8d;
+    color:white;
+    width: 100%;
+    text-align:center;
+    padding:5px;
+}
+#section {
+    background-color:#b0c4de;
+    width:100%;
+    text-align: ;
+    padding-left:35%;
+    padding-right:35%;	 	 
+}
+p{ 
+    line-height: 120%;
+    text-indent: 30px;
+    color: #ffffff;
+    font-family: Lobster, Ubuntu, Cabin, Tahoma, sans-serif;}
 
 h1{color: #0094ff;
     border: 1px solid #fff;
