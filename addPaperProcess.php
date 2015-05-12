@@ -7,7 +7,8 @@
 	require_once('connect.php');
 	
 	//Generates the query to be sent to mysql 
-	$query = "INSERT INTO post(statusCode,status,sharePerms,date,permType) 
+	$query = "INSERT INTO post(title,author,journal,date,abstract,link,rating,reason,aurate,researchLevel,methodology,practice,benefits,
+                                context, result,integrity,conrating,conreason,conrate,reques,method,metrics,participants) 
 	VALUES ('".$_POST['title']."',
 			'".$_POST['author']."',
 			'".$_POST['journal']."',
@@ -17,7 +18,7 @@
 			'".$_POST['rating']."',
 			'".$_POST['reason']."',
 			'".$_POST['aurate']."',
-			'".$_POST['reasearchL']."',
+			'".$_POST['researchL']."',
 			'".$_POST['methodology']."',
 			'".$_POST['practise']."',
 			'".$_POST['benefits']."',
@@ -48,10 +49,5 @@
 	echo '<br><a href="poststatusform.php">Post another status</a>';
 	echo '<br><a href="index.php">Return to Home page</a>';
 	
-	
-	
-	
-	
-	
-	
+
 ?>
