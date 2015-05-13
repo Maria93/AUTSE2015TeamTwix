@@ -6,12 +6,16 @@ body {
     margin-right: 60px;
     margin-top: 0%;
     border-bottom: 5px solid #fff;
-    background-color: #b0c4de;
+    background-color: #026b8d;
 }
-
+#logo{
+    float: right;
+}
 #header {
-        background-color:#026b8d;
+        background-color:#046686;
+        text-align: center;
         color:white;
+        height: 25%;
         //width: 100%;
         text-align:center;
         padding:5px;
@@ -19,16 +23,15 @@ body {
 
 #footer {
     clear: both;
-    color: #000;
     text-align: center;
-    background: white;
+    background: #045c78;
     height: 50px;
 }
 
 #nav {
     line-height: 30px;
-    background-color: #0f86b3;
-    height: auto;
+    background-color: #0078a0;
+    height: 100%;
     width: 15%;
     float: left;
     padding: 3%;
@@ -41,23 +44,23 @@ div {
 }
 
 #section {
-    background-color:#b0c4de;
+    //background-color:#b0c4de;
     //width:100%;
     word-wrap: break-word; 
     overflow-wrap: break-word; 
-    padding-left:35%;
+    padding-left:25%;
     padding-right:15%;	 	 
 }
 p{ 
     line-height: 120%;
-    text-indent: 30px;
+    //text-indent: 30px;
     color: #ffffff;
     font-family: Lobster, Ubuntu, Cabin, Tahoma, sans-serif;
 }
 
 h1{
     color: #fff;
-    border: 1px solid #fff;
+    //border: 1px solid #fff;
     margin-left: 63px;
     margin-right: 63px;
     padding: 20px;
@@ -83,7 +86,7 @@ a:active{
     background-color: #fff;
     color: #000;}
 
-span{color: #0094ff;
+span{color: #000;
      padding: 20px;
      font-size: 20px;
 }
