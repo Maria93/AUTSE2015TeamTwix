@@ -8,55 +8,77 @@
 	<div id="header"> 
 		<h1>ADD PAPER</h1>
 		</div>
-		<br>
+    <div id="nav">
+        <ul>
+            <li> <a style="color: #fff" href="index.html">Home</a> </li>
+            <li> <a style="color: #fff" href="login.html">Login</a> </li>
+            <li> <a style="color: #fff" href="addPaper.html">Submit Article</a> </li>
+            <li> <a style="color: #fff" href="about.html">About</a> </li>
+            <li> <a style="color: #fff" href="help.html">Support Team</a> </li>
+        </ul>
+    </div>
 
     <div id="section">
-		
+		<p>Please fill in the form below to submit a paper.</p>
 		<form action="addPaperProcess.php"id="papfrm" method="post"> 
-		Title: <input type="text" name="title"> <br><br>
-		Author: <input type="text" name="author"> <br><br>
-		Journal: <input type="text" name="journal"> <br><br>
-		Publication Date: <input type="date" value="date" name="date"> <br><br>
-		Abstract: <textarea name="abstract" form="papfrm"> </textarea> <br><br>
-		Paper Link: <input type="text" name="link"> <br><br> 
-		Credibility Rating: <select name="rating">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							</select> <br><br>
-		Reason for given Rating: <textarea name="reason" form="papfrm"> </textarea> <br><br> 
-		Who Rated it: <input type="text" name="aurate"> <br><br>
-		Research Level: <select name="researchL">
-						<option value="high">High</option>
-						<option value="medium">Medium</option> 
-						<option value="Low">Low</option> 
-						</select><br><br>
-		Software Development Methodology:<input type="text" name="methodology" value="name"> &nbsp; <textarea name="methoddesc" form="papfrm">Description</textarea> <br><br>
-		Standard Practise(Investigated): <input type="text" name="practise" value="name"> &nbsp; <textarea name="pracdesc" form="papfrm">Description</textarea><br><br>
-		Benefit being Tested: <textarea name="benefits" form="papfrm"></textarea><br><br> 
-		Context of the Study: <textarea name="context" form="papfrm"></textarea><br><br>
-		Result of the Study:  <textarea name="result" form="papfrm"></textarea><br><br>
-		Integrity of Implementation: <textarea name="integrity" form="papfrm"></textarea><br><br>
-		Confidence Rating: <select name="conrating">
-							<option value="one">1</option>
-							<option value="two">2</option>
-							<option value="three">3</option>
-							<option value="four">4</option>
-							<option value="five">5</option>
-							</select> <br><br>
-		Reason for given Rating: <textarea name="conreason" form="papfrm"> </textarea> <br><br> 
-		Who Rated it: <input type="text" name="conrate"> <br><br>
-		Research Question: <textarea name="reques" form="papfrm"></textarea><br><br>
-		Research Method: <input type="text" name="method"> <br><br>
-		Research Metrics: <textarea name="metrics" form="papfrm"></textarea><br><br>
-		Nature of participants: <input type="text" name="participants"> <br><br>
+            <h2>Basic Paper Information</h2>
+		<input type="text" name="title" placeholder="paper title"> Title <br><br>
+		<input type="text" name="author" placeholder="author"> Author<br><br>
+		<input type="text" name="journal" placeholder="journal"> Journal<br><br>
+        <textarea name="abstract" form="papfrm" placeholder="abstract" placeholder="abstract"> </textarea> Abstract<br><br>
+		<input type="date" value="date" name="date"> Publication Date <br><br>
+		
+            <h2>Full paper</h2>
+		<input type="text" name="link" placeholder="https/link"> Paper link <br><br>
+            <h2>Paper Credibility Rating</h2> 
+		<select name="rating">
+		    <option value="1">1</option>
+		    <option value="2">2</option>
+		    <option value="3">3</option>
+		    <option value="4">4</option>
+		    <option value="5">5</option>
+		 </select> Credibility Rating<br><br>
+
+		<textarea name="reason" form="papfrm"> </textarea> Reason for given Rating <br><br> 
+		<input type="text" name="aurate"> Who Rated it<br><br>
+            <h2>Empirical Research</h2>
+		<select name="researchL">
+			<option value="high">High</option>
+			<option value="medium">Medium</option> 
+			<option value="Low">Low</option> 
+		</select>Research Level<br><br>
+
+		<input type="text" name="methodology" value="name"> &nbsp; Software Development Methodology <br>
+            <textarea name="methoddesc" form="papfrm" placeholder="methodology descripiton"></textarea><br><br>
+		<input type="text" name="practise" value="name"> &nbsp; Standard Practise(Investigated) <br>
+            <textarea name="pracdesc" form="papfrm" placeholder="standard description"></textarea><br><br>
+		<textarea name="benefits" form="papfrm" placeholder="benefits"></textarea> Benefit being Tested<br><br> 
+		<textarea name="context" form="papfrm" placeholder="context"></textarea> Context of the Study<br><br>
+		<textarea name="result" form="papfrm" placeholder="results"></textarea> Result of the Study<br><br>
+		<textarea name="integrity" form="papfrm" placeholder="integrity of implementation"></textarea> Integrity of Implementation<br><br>
+             
+            <h2>About Research</h2>
+		<textarea name="reques" form="papfrm" placeholder="what's being investigated"></textarea> Research Question: <br><br>
+		<input type="text" name="method" placeholder="method"> Research Method<br><br>
+		<textarea name="metrics" form="papfrm" placeholder="metrics"></textarea> Research Metrics<br><br>
+		<input type="text" name="participants"> Nature of participants<br><br>
+            <h2>Paper Confidence Rating</h2>
+        <select name="conrating">
+				<option value="one">1</option>
+				<option value="two">2</option>
+				<option value="three">3</option>
+				<option value="four">4</option>
+				<option value="five">5</option>
+		</select> Confidence rating<br><br>
+		<textarea name="conreason" form="papfrm" placeholder="why"> </textarea> Reason for given rating<br><br> 
+		<input type="text" name="conrate" placeholder="who"> Who rated it<br><br>
 		<input type="submit" name="post" value="Submit">								  
 										  
 		</form>
 		
 	</div>
-	
+	<div id="footer">
+            <p style="float: right"> <span> Team Twix(c) 2015, Jaspreet Walia, Jean-Yves Kwibuka, Maria Samuelu and Siatua Uili </span></p>
+        </div>
 	</body>
 </html>

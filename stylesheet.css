@@ -5,24 +5,31 @@ body {
     margin-left: 60px;
     margin-right: 60px;
     margin-top: 0%;
+    border-bottom: 5px solid #fff;
     background-color: #b0c4de;
-    border-bottom: 10px solid #fff;
-    border-left: 10px solid #0094ff;
 }
 
 #header {
         background-color:#026b8d;
         color:white;
-        width: 100%;
+        //width: 100%;
         text-align:center;
         padding:5px;
+}
+
+#footer {
+    clear: both;
+    color: #000;
+    text-align: center;
+    background: white;
+    height: 50px;
 }
 
 #nav {
     line-height: 30px;
     background-color: #0f86b3;
     height: auto;
-    width: 12%;
+    width: 15%;
     float: left;
     padding: 3%;
 }
@@ -30,17 +37,16 @@ body {
 div {
     word-wrap: break-word; 
     overflow-wrap: break-word; 
-    width: 100%;
+    //width: 100%;
 }
 
 #section {
     background-color:#b0c4de;
-    width:100%;
-    text-align: ;
+    //width:100%;
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     padding-left:35%;
-    padding-right:35%;	 	 
+    padding-right:15%;	 	 
 }
 p{ 
     line-height: 120%;
@@ -50,7 +56,7 @@ p{
 }
 
 h1{
-    color: #0094ff;
+    color: #fff;
     border: 1px solid #fff;
     margin-left: 63px;
     margin-right: 63px;
@@ -80,4 +86,9 @@ a:active{
 span{color: #0094ff;
      padding: 20px;
      font-size: 20px;
+}
+
+li{
+    color: #fff;
+    font-size: large;
 }

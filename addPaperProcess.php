@@ -45,9 +45,5 @@
 	//do if query wasn't successful
 	else{echo "Error: $conn->error";}
 	
-	
-	echo '<br><a href="poststatusform.php">Post another status</a>';
-	echo '<br><a href="index.php">Return to Home page</a>';
-	
 
 ?>
