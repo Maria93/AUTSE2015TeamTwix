@@ -16,6 +16,8 @@ body {
         background-image: url("blueBanner.png");
         background-repeat: no-repeat;
         text-align: center;
+        box-shadow: 0 0 10px #000;
+        
         color:white;
         height: 25%;
         //width: 100%;
@@ -29,15 +31,18 @@ body {
     text-align: center;
     background: #045c78;
     height: 50px;
+    box-shadow: 0 0 10px #000;
 }
 
 #nav {
     line-height: 30px;
     background-color: #0078a0;
-    height: 100%;
+    position: relative;
+    min-height: 100%;
     width: 15%;
     float: left;
     padding: 3%;
+    box-shadow: 0 0 10px #000;
 }
 
 div {
