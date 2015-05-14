@@ -13,6 +13,8 @@ body {
 }
 #header {
         background-color:#046686;
+        background-image: url("blueBanner.png");
+        background-repeat: no-repeat;
         text-align: center;
         color:white;
         height: 25%;
@@ -23,6 +25,7 @@ body {
 
 #footer {
     clear: both;
+    font-size: 15px;
     text-align: center;
     background: #045c78;
     height: 50px;
@@ -88,7 +91,6 @@ a:active{
 
 span{color: #000;
      padding: 20px;
-     font-size: 20px;
 }
 
 li{
