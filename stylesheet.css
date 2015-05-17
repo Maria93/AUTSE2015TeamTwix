@@ -57,8 +57,18 @@ div {
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     padding-left:25%;
-    padding-right:15%;	 	 
+    //padding-right:15%;	 	 
 }
+
+#browseSection {
+    //background-color:#b0c4de;
+    //width:100%;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    //padding-right:15%;
+    box-shadow: 0 0 4px #000;	 	 
+}
+
 p{ 
     line-height: 120%;
     //text-indent: 30px;
