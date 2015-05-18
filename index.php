@@ -42,35 +42,32 @@ Below is a list of topic you'd typically find in Software Engineering. Browse by
 <?ph>
             require_once('connect.php');
 
-			$conn = mysqli_connect($host, $user, $pass, $db) or die('Failed to connect!');
-			
-			
+			$conn = mysqli_connect($host, $username, $password, $db) or die('Failed to connect!');
+
 			// Checks if connection is successful
+
 	if (!$conn) {
 		// Displays an error message, avoid using die() or exit() as this terminates the execution
 		// of the PHP script
-		echo "<p>Database connection failure<br><br><a href='searchstatusform.php'>Return to SEARCH PAGE</a><br><br><a href='index.php'>Return to HOME PAGE</a></p>";
+		echo "<p>Database connection failure<br><br><a href='index.php'>Return to HOME</a></p>";
 	} else {
 		// Upon successful connection
 		
-		// Get data from the form
-		//$search = mysqli_real_escape_string(trim($_GET['search']));
-        //$search = trim($_GET['search']);
-        $search = $_GET["search"];
-        
+		// Get specific papers from the database
+        $scrum = "Agile";  
 	
 		// Set up the SQL command to retrieve the data from the table
         
 		// % symbol represent a wild-card to match any characters
 		// like is a comparison operator
-        $query = "select * from $table where Status like '%$search%'";
+        $query = "select * from $table where Status like '%$scrum%'";
         
 		
 		// executes the query and store result into the result pointer
 		$result = mysqli_query($conn, $query);
 		// checks if the execution was successful
 		if(!$result) {
-			echo "<p>Something is wrong with ",	$query, "<br><br><a href='searchstatusform.php'>Return to SEARCH PAGE</a><br><br><a href='index.php'>Return to HOME PAGE</a></p>";
+			echo "<p>Something is wrong with ",	$query, "<br><br><a href='index.php'>Return to HOME</a></p>";
 		} else {
 			// Display the retrieved records
 			
@@ -97,7 +94,7 @@ Below is a list of topic you'd typically find in Software Engineering. Browse by
                     echo "<span>Date: </span>",$row["Date"],"<br>";
                     echo "<span>Permission: </span>",$row["Permission"],"<br>";
                     echo "======================================";
-				echo "<br><br><a href='searchstatusform.php'>Return to SEARCH PAGE</a><br><br><a href='index.php'>Return to HOME PAGE</a></p>";               
+				echo "<br><br><a href='index.php'>Return to HOME</a></p>";               
             echo "</center>";
 			}
 			//echo "</table>";
