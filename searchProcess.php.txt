@@ -1,0 +1,16 @@
+<?php
+require_once('connect.php');
+
+    //checks if connection is established 
+    if(!$conn) {
+        echo "<p>Sorry but we could not submit your paper at this time. PLease try again later
+        <br>
+        <br>
+        <a href='index.php'>Return Home</a> 
+        </p>";
+    }
+	
+
+	//Generates the query to be sent to mysql 
+    else {
+?>  

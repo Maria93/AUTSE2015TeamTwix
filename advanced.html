@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Advanced Search</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <body>
+        <div id="header">
+            <h1>SERLER Advanced Search</h1>
+        </div>
+        <div id="nav">
+            <ul>
+                <li> <a style="color: #fff" href="index.pho">Home</a> </li>
+                <li> <a style="color: #fff" href="login.html">Login</a> </li>
+                <li> <a style="color: #fff" href="addPaper.html">Submit Article</a> </li>
+                <li> <a style="color: #fff" href="about.html">About</a> </li>
+                <li> <a style="color: #fff" href="help.html">Support Team</a> </li>
+            </ul>
+        </div>
+        <div id="section">
+            <div id="browseSection">
+                <h2 style="padding: 5px">
+                    SERLER Advanced Search Engine
+                    <hr>
+                </h2>
+                <div>
+                    <!-- The results of the advanced search will be displayed below -->
+                </div>
+            </div>
+			<form action="searchProcess.php"id="searchfrm" method="post">
+				<input type="text" name="title" required placeholder="paper title"> Title <br><br>
+				<input type="text" name="author" required placeholder="author"> Author<br><br>
+				<input type="text" name="journal" required placeholder="journal"> Journal<br><br>
+				<input type="number" name="date" required placeholder="year">Year<br><br>
+				</form>
+        </div>
+        
+    </body>
+</html>

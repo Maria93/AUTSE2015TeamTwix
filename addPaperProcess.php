@@ -11,7 +11,7 @@
         echo "<p>Sorry but we could not submit your paper at this time. PLease try again later
         <br>
         <br>
-        <a href='index.html'>Return Home</a> 
+        <a href='index.php'>Return Home</a> 
         </p>";
     }
 	
@@ -59,14 +59,14 @@
         echo "<p>Something is wrong with ", $query, "
         <br>
         <br>
-        <a href = 'index.html'>Return to Home</a>
+        <a href = 'index.php'>Return to Home</a>
         </p>";
     }
     else {
         echo "<p> Your Paper will be considered for submission. Thank You
         <br>
         <br>
-        <a href='index.html.Return to Home</a>
+        <a href='index.php.Return to Home</a>
         </p>";
     }
     mysqli_close($conn);
