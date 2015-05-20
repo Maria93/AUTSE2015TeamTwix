@@ -23,11 +23,19 @@
 		<p>Please fill in the form below to submit a paper.</p>
 		<form action="addPaperProcess.php"id="papfrm" method="post"> 
             <h2>Basic Paper Information</h2>
+<<<<<<< HEAD
 		<input type="text" name="title" required placeholder="paper title"> Title <br><br>
 		<input type="text" name="author" required placeholder="author"> Author<br><br>
 		<input type="text" name="journal" required placeholder="journal"> Journal<br><br>
         <textarea name="abstract" form="papfrm" required placeholder="abstract" cols="22"> </textarea> Abstract<br><br>
 		<input type="number" name="date" required placeholder="2005"> Publication Date <br><br>
+=======
+		<input type="text" name="title" placeholder="paper title"> Title <br><br>
+		<input type="text" name="author" placeholder="author"> Author<br><br>
+		<input type="text" name="journal" placeholder="journal"> Journal<br><br>
+        <textarea name="abstract" form="papfrm" placeholder="abstract" cols="22"> </textarea> Abstract<br><br>
+		<input type="number" name="date" placeholder="2005"> Publication Date <br><br>
+>>>>>>> 959d55c300f123d3bbecc3cd8e1c83faeca5f803
 		
             <h2>Full paper</h2>
 		<input type="text" name="link" required placeholder="https/link"> Paper link <br><br>
@@ -40,8 +48,13 @@
 		    <option value="5">5</option>
 		 </select> Credibility Rating<br><br>
 
+<<<<<<< HEAD
 		<textarea name="reason" required form="papfrm" cols="22"> </textarea> Reason for given Rating <br><br> 
 		<input type="text" required name="aurate"> Who Rated it<br><br>
+=======
+		<textarea name="reason" form="papfrm" cols="22"> </textarea> Reason for given Rating <br><br> 
+		<input type="text" name="aurate"> Who Rated it<br><br>
+>>>>>>> 959d55c300f123d3bbecc3cd8e1c83faeca5f803
             
             <h2>Empirical Research</h2>
 		<select name="researchL" style="margin-right: 110px">
@@ -50,6 +63,7 @@
 			<option value="Low">Low</option> 
 		</select>Research Level<br><br>
 
+<<<<<<< HEAD
 		<input type="text" name="methodology" required placeholder="methodolgy name"> &nbsp; Software Development Methodology <br>
             <textarea name="methoddesc" form="papfrm" required placeholder="methodology descripiton" cols="22"></textarea><br><br>
 		<input type="text" name="practise" required placeholder="investigated practice"> &nbsp; Standard Practise(Investigated) <br>
@@ -64,6 +78,22 @@
 		<input type="text" name="method" required placeholder="method"> Research Method<br><br>
 		<textarea name="metrics" form="papfrm" required placeholder="metrics" cols="22"></textarea> Research Metrics<br><br>
 		<input type="text" required name="participants">  Nature of participants<br><br>
+=======
+		<input type="text" name="methodology" placeholder="methodolgy name"> &nbsp; Software Development Methodology <br>
+            <textarea name="methoddesc" form="papfrm" placeholder="methodology descripiton" cols="22"></textarea><br><br>
+		<input type="text" name="practise" placeholder="investigated practice"> &nbsp; Standard Practise(Investigated) <br>
+            <textarea name="pracdesc" form="papfrm" placeholder="standard description" cols="22"></textarea><br><br>
+		<textarea name="benefits" form="papfrm" placeholder="benefits" cols="22"></textarea> Benefit being Tested<br><br> 
+		<textarea name="context" form="papfrm" placeholder="context" cols="22"></textarea> Context of the Study<br><br>
+		<textarea name="result" form="papfrm" placeholder="results" cols="22"></textarea> Result of the Study<br><br>
+		<textarea name="integrity" form="papfrm" placeholder="integrity of implementation" cols="22"></textarea> Integrity of Implementation<br><br>
+             
+            <h2>About Research</h2>
+		<textarea name="reques" form="papfrm" placeholder="what's being investigated" cols="22"></textarea> Research Question: <br><br>
+		<input type="text" name="method" placeholder="method"> Research Method<br><br>
+		<textarea name="metrics" form="papfrm" placeholder="metrics" cols="22"></textarea> Research Metrics<br><br>
+		<input type="text" name="participants"> Nature of participants<br><br>
+>>>>>>> 959d55c300f123d3bbecc3cd8e1c83faeca5f803
             <h2>Paper Confidence Rating</h2>
         <select name="conrating" style="margin-right: 140px">
 				<option value="one">1</option>
@@ -72,8 +102,13 @@
 				<option value="four">4</option>
 				<option value="five">5</option>
 		</select> Confidence rating<br><br>
+<<<<<<< HEAD
 		<textarea name="conreason" form="papfrm" required placeholder="why" cols="22"> </textarea> Reason for given rating<br><br> 
 		<input type="text" name="conrate"required placeholder="who"> Who rated it<br><br>
+=======
+		<textarea name="conreason" form="papfrm" placeholder="why" cols="22"> </textarea> Reason for given rating<br><br> 
+		<input type="text" name="conrate" placeholder="who"> Who rated it<br><br>
+>>>>>>> 959d55c300f123d3bbecc3cd8e1c83faeca5f803
 		<input type="submit" name="post" value="Submit article">								  
 										  
 		</form>

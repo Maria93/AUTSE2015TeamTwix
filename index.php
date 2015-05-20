@@ -31,9 +31,13 @@
 </form> 
 Below is a list of topic you'd typically find in Software Engineering. Browse by clicking on an individual topic to reveal a list of papers
     that relate to that topic. You're also welcome to use our search engine to find a specific paper. <br><br>
+<<<<<<< HEAD
 	<form action="searchProcess.php"id="papfrm" method="post">
 <input type="text" name="search"><input type="submit" name="submit" value="Search"> <br><br> <a href="advanced.html">Advanced Search</a>
 </form>
+=======
+<input type="text" name="search"><input type="submit" name="submit" value="Search"> <br><br> <a href="advanced.html">Advanced Search</a>
+>>>>>>> 959d55c300f123d3bbecc3cd8e1c83faeca5f803
     <div id="browseSection">
         <h3 style="padding: 5px">
             Browse our catalogue of Empirical Studies topics
@@ -41,7 +45,7 @@ Below is a list of topic you'd typically find in Software Engineering. Browse by
         </h3>
         <!-- THIS IS WHERE THE BROWSABLE PAPERS WILL BE DISPLAYED. -->
 
-<?ph>
+<?php>
             require_once('connect.php');
 
 			$conn = mysqli_connect($host, $username, $password, $db) or die('Failed to connect!');
