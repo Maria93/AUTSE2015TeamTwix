@@ -53,7 +53,7 @@ Below is a list of topic you'd typically find in Software Engineering. Browse by
 	if (!$conn) {
 		// Displays an error message, avoid using die() or exit() as this terminates the execution
 		// of the PHP script
-		echo "<p>Database connection failure<br><br><a href='index.php'>Return to HOME</a></p>";
+		echo "<p>Database connection failure<br><br><a href='index.php'>Back to Top</a></p>";
 	} else {
 		// Upon successful connection
 		
