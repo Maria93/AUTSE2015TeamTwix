@@ -77,47 +77,51 @@ Below is a list of topic you'd typically find in Software Engineering. Browse by
 			
             
             //echo "<table border=\"1\">";
-			echo "<tr>\n"
-			     ."<th scope=\"col\">ID</th>\n"
-				 ."<th scope=\"col\">Title</th>\n"
-				 ."<th scope=\"col\">Author</th>\n"
-                 ."<th scope=\"col\">Journal</th>\n"
-                 ."<th scope=\"col\">Date(Year)</th>\n"
-                 ."<th scope=\"col\">Abstract</th>\n"
-                 ."<th scope=\"col\">Link</th>\n"
-                 ."<th scope=\"col\">Rating</th>\n"
-                 ."<th scope=\"col\">Reason for Rating</th>\n"
-                 ."<th scope=\"col\">Rated by</th>\n"
-                 ."<th scope=\"col\">Research Level</th>\n"
-                 ."<th scope=\"col\">Methodology</th>\n"
-                 ."<th scope=\"col\">Pracice</th>\n"
-                 ."<th scope=\"col\">Evidence Benefit</th>\n"
-                 ."<th scope=\"col\">Evidence Context</th>\n"
-                 ."<th scope=\"col\">Evidence Result</th>\n"
-                 ."<th scope=\"col\">Integrity</th>\n"
-                 ."<th scope=\"col\">Confidence Rating</th>\n"
-                 ."<th scope=\"col\">Reason for Evidence Rating</th>\n"
-                 ."<th scope=\"col\">Evidence Rated by</th>\n"
-                 ."<th scope=\"col\">Research Question</th>\n"
-                 ."<th scope=\"col\">Research Method</th>\n"
-                 ."<th scope=\"col\">Research Metrics</th>\n"
-                 ."<th scope=\"col\">Participant</th>\n"
-				 ."</tr>\n";
+
+
+		/*	echo "<tr>\n"
+			         ."<th scope=\"col\">ID</th>\n"
+				     ."<th scope=\"col\">Title</th>\n"
+				     ."<th scope=\"col\">Author</th>\n"
+                     ."<th scope=\"col\">Journal</th>\n"
+                     ."<th scope=\"col\">Date(Year)</th>\n"
+                     ."<th scope=\"col\">Abstract</th>\n"
+                     ."<th scope=\"col\">Link</th>\n"
+                     ."<th scope=\"col\">Rating</th>\n"
+                     ."<th scope=\"col\">Reason for Rating</th>\n"
+                     ."<th scope=\"col\">Rated by</th>\n"
+                     ."<th scope=\"col\">Research Level</th>\n"
+                     ."<th scope=\"col\">Methodology</th>\n"
+                     ."<th scope=\"col\">Pracice</th>\n"
+                     ."<th scope=\"col\">Evidence Benefit</th>\n"
+                     ."<th scope=\"col\">Evidence Context</th>\n"
+                     ."<th scope=\"col\">Evidence Result</th>\n"
+                     ."<th scope=\"col\">Integrity</th>\n"
+                     ."<th scope=\"col\">Confidence Rating</th>\n"
+                     ."<th scope=\"col\">Reason for Evidence Rating</th>\n"
+                     ."<th scope=\"col\">Evidence Rated by</th>\n"
+                     ."<th scope=\"col\">Research Question</th>\n"
+                     ."<th scope=\"col\">Research Method</th>\n"
+                     ."<th scope=\"col\">Research Metrics</th>\n"
+                     ."<th scope=\"col\">Participant</th>\n"
+				 ."</tr>\n";       */
+
+
                  
 			// retrieve current record pointed by the result pointer
 			// Note the = is used to assign the record value to variable $row, this is not an error
 			// the ($row = mysqli_fetch_assoc($result)) operation results to false if no record was retrieved
 			// _assoc is used instead of _row, so field name can be used
 			while ($row = mysqli_fetch_assoc($result)){
-            echo "<center>";
+            //echo "<center>";
 				echo "<p>";
-                    echo "ID: ",$row["ID"],"<br>";
+                    //echo "ID: ",$row["ID"],"<br>";
                     echo "Title: ",$row["title"],"<br>";
                     echo "Author: ",$row["author"],"<br>";
                     echo "Journal: ",$row["journal"],"<br>";
                     echo "Date(Year): ",$row["dateYear"],"<br>";
                     echo "Abstract: ",$row["abstract"],"<br>";
-                    echo "<a href='#'>Link: </a>",$row["link"],"<br>";
+                    echo "Link: ","<a href = $row["link"]> </a>","<br>";
                     echo "Rating: ",$row["rating"],"<br>";
                     echo "Reason for Rating: ",$row["ratingReason"],"<br>";
                     echo "Rate by: ",$row["rater"],"<br>";
@@ -135,8 +139,9 @@ Below is a list of topic you'd typically find in Software Engineering. Browse by
                     echo "Research Method: ",$row["reMethod"],"<br>";
                     echo "Research Metrics: ",$row["reMetrics"],"<br>";
                     echo "Participant: ",$row["participant"],"<br>";
-                    echo "======================================";            
-            echo "</center>";
+                    echo "======================================";
+                echo <"</p>">;            
+            //echo "</center>";
 			}
 			//echo "</table>";
             
