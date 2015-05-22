@@ -113,7 +113,7 @@ Below is a list of topic you'd typically find in Software Engineering. Browse by
 				// the ($row = mysqli_fetch_assoc($result)) operation results to false if no record was retrieved
 				// _assoc is used instead of _row, so field name can be used
 				while ($row = mysqli_fetch_assoc($result)){
-				//echo "<center>";
+				echo "<center>";
 					echo "<p>";
 						//echo "ID: ",$row["ID"],"<br>";
 						echo "Title: ",$row["title"],"<br>";
@@ -121,7 +121,7 @@ Below is a list of topic you'd typically find in Software Engineering. Browse by
 						echo "Journal: ",$row["journal"],"<br>";
 						echo "Date(Year): ",$row["dateYear"],"<br>";
 						echo "Abstract: ",$row["abstract"],"<br>";
-						//echo "Link: ","<a href = $row["link"]> </a>","<br>";
+					    //echo "Link: ","<a href = $row["link"]> </a>","<br>";
 						echo "Rating: ",$row["rating"],"<br>";
 						echo "Reason for Rating: ",$row["ratingReason"],"<br>";
 						echo "Rate by: ",$row["rater"],"<br>";
@@ -141,7 +141,7 @@ Below is a list of topic you'd typically find in Software Engineering. Browse by
 						echo "Participant: ",$row["participant"],"<br>";
 						echo "======================================";
 					echo <"</p>">;            
-				//echo "</center>";
+				echo "</center>";
 				}
 				//echo "</table>";
 				
