@@ -113,7 +113,7 @@
 
 						    echo "Participant: ",$row["participant"],"<br>";
 
-						    echo "--------------------------------------------------------";
+						    echo "<hr>";
 
 				echo"</p>";
 
