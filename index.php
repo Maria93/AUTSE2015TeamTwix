@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	</head>
 	<body>
-        <img id="logo" src="autLogo.png" alt="HTML5 Icon" style="width:200px; height:200px">
+        <img id="logo" src="autLogo.png" alt="HTML5 Icon" style="width:200px;height:200px">
 		<div id="header">
             <h1>SERLER</h1>
         </div>
@@ -26,26 +26,24 @@
     Password <input type="password" name="password"><br><br>  
     <input type="submit" name="submit" value="Submit">
     </div>
-</form> 
 
 <div id="section">
     <h2>Welcome to the SERLER Repository</h2>
-
+</form> 
 Below is a list of topic you'd typically find in Software Engineering. Browse by clicking on an individual topic to reveal a list of papers
     that relate to that topic. You're also welcome to use our search engine to find a specific paper. <br><br>
 	<form action="searchProcess.php"id="papfrm" method="post">
 <input type="text" name="search"><input type="submit" name="submit" value="Search"> <br><br> <a href="advanced.html">Advanced Search</a>
 </form>
     <div id="browseSection">
-        
         <h3 style="padding: 5px">
             Browse our catalogue of Empirical Studies topics
-            </hr>
+            <hr>
         </h3>
         <!-- THIS IS WHERE THE BROWSABLE PAPERS WILL BE DISPLAYED. -->
-<!--
-	<?php>
-				require_once('connect.php');
+
+<?PHP>
+    require_once('connect.php');
 
 				$conn = mysqli_connect($host, $username, $password, $db) or die('Failed to connect!');
 
@@ -75,44 +73,7 @@ Below is a list of topic you'd typically find in Software Engineering. Browse by
 				echo "<p>Something is wrong with ",	$query;
 			} else {
 				// Display the retrieved records
-				
-				
-				//echo "<table border=\"1\">";
 
-
-			/*	echo "<tr>\n"
-						 ."<th scope=\"col\">ID</th>\n"
-						 ."<th scope=\"col\">Title</th>\n"
-						 ."<th scope=\"col\">Author</th>\n"
-						 ."<th scope=\"col\">Journal</th>\n"
-						 ."<th scope=\"col\">Date(Year)</th>\n"
-						 ."<th scope=\"col\">Abstract</th>\n"
-						 ."<th scope=\"col\">Link</th>\n"
-						 ."<th scope=\"col\">Rating</th>\n"
-						 ."<th scope=\"col\">Reason for Rating</th>\n"
-						 ."<th scope=\"col\">Rated by</th>\n"
-						 ."<th scope=\"col\">Research Level</th>\n"
-						 ."<th scope=\"col\">Methodology</th>\n"
-						 ."<th scope=\"col\">Pracice</th>\n"
-						 ."<th scope=\"col\">Evidence Benefit</th>\n"
-						 ."<th scope=\"col\">Evidence Context</th>\n"
-						 ."<th scope=\"col\">Evidence Result</th>\n"
-						 ."<th scope=\"col\">Integrity</th>\n"
-						 ."<th scope=\"col\">Confidence Rating</th>\n"
-						 ."<th scope=\"col\">Reason for Evidence Rating</th>\n"
-						 ."<th scope=\"col\">Evidence Rated by</th>\n"
-						 ."<th scope=\"col\">Research Question</th>\n"
-						 ."<th scope=\"col\">Research Method</th>\n"
-						 ."<th scope=\"col\">Research Metrics</th>\n"
-						 ."<th scope=\"col\">Participant</th>\n"
-					 ."</tr>\n";       */
-
-
-					 
-				// retrieve current record pointed by the result pointer
-				// Note the = is used to assign the record value to variable $row, this is not an error
-				// the ($row = mysqli_fetch_assoc($result)) operation results to false if no record was retrieved
-				// _assoc is used instead of _row, so field name can be used
 				while ($row = mysqli_fetch_assoc($result)){
 				echo "<center>";
 					echo "<p>";
@@ -154,8 +115,7 @@ Below is a list of topic you'd typically find in Software Engineering. Browse by
 			// close the database connection
 			mysqli_close($conn);
 		} // if successful database connection
-	?> 
--->
+?>
 
     </div>
 
