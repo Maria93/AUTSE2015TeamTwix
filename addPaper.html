@@ -72,8 +72,23 @@
 		<input type="text" required name="participants">  Nature of participants<br><br>
 		<input type="text" name="methodology" placeholder="methodolgy name"> &nbsp; Software Development Methodology <br>
             <textarea name="methoddesc" form="papfrm" placeholder="methodology descripiton" cols="22"></textarea><br><br>
-		<input type="text" name="practise" placeholder="investigated practice"> &nbsp; Standard Practise(Investigated) <br>
-            <textarea name="pracdesc" form="papfrm" placeholder="standard description" cols="22"></textarea><br><br>
+		
+            <select name="pracdesc" >
+                <optgroup label="STANDARD PRACTICES" >
+                    <option value="" disabled selected>Select a Standard Practise</option>
+                    <option value="Software Engineering">Requirements Engineering</option>
+                    <option value="Software Engineering">Software Design</option>
+                    <option value="Software Engineering">Software Construction</option>
+                    <option value="Software Engineering">Software Testing</option>
+                    <option value="Software Engineering">Software Maintenance</option>
+                    <option value="Software Engineering">Software Configuration Management</option>
+                    <option value="Software Engineering">Software Engineering Management</option>
+                    <option value="Software Engineering">Software Engineering Process</option>
+                    <option value="Software Engineering">Software Engineering Tools and Methods</option>
+                    <option value="Software Engineering">Software Quality Management</option>
+                </optgroup>
+            </select><br>
+            <input type="text" name="practise" placeholder="investigated practice"> &nbsp; OR Specify<br><br>
 		<textarea name="benefits" form="papfrm" placeholder="benefits" cols="22"></textarea> Benefit being Tested<br><br> 
 		<textarea name="context" form="papfrm" placeholder="context" cols="22"></textarea> Context of the Study<br><br>
 		<textarea name="result" form="papfrm" placeholder="results" cols="22"></textarea> Result of the Study<br><br>

@@ -50,50 +50,19 @@
 <?php
 	require_once("connect.php");
 
-	$conn = @mysqli_connect($host, $username, $password )or die("Can't connect to database");
-
-					    
-
+	$conn = @mysqli_connect($host, $username, $password )or die("Can't retrieve browsable data at this time.");
 	@mysqli_select_db($conn, $db) or die("Can't select the database");
-
-
-
 	if (!$conn) {
-
-
-
     echo "<p>Database connection failure</p>";
-
-
-
 	} else {
-
-		
-
 		$query = "select * from $table";
-
-
-
 		$result = mysqli_query($conn, $query);
-
-
-
 		if(!$result) {
 
 			echo "<p>Something is wrong with ",	$query, "</p>";
-
-
-
 			} else {
 
-
-
-
-
 		    while ($row = mysqli_fetch_array($result)){	 
-
-
-
 			    echo "<p>";
 
 						    //echo "ID: ",$row["ID"],"<br>";
