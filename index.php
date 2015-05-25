@@ -42,7 +42,7 @@ Below is a list of topic you'd typically find in Software Engineering. Browse by
             </hr>
         </h3>
         <!-- THIS IS WHERE THE BROWSABLE PAPERS WILL BE DISPLAYED. -->
-
+<!--
 	<?php>
 				require_once('connect.php');
 
@@ -154,7 +154,7 @@ Below is a list of topic you'd typically find in Software Engineering. Browse by
 			mysqli_close($conn);
 		} // if successful database connection
 	?> 
-
+-->
 
     </div>
 
