@@ -127,7 +127,7 @@
 
             if($rownull == null) {
 
-			    echo "Cant find any unassigned bookings";
+			    echo "There are no books to display";
 
 		    } 
 

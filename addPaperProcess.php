@@ -19,29 +19,29 @@
 	//Generates the query to be sent to mysql 
     else {
 
-    $title = $_POST['title']; 
-    $author = $_POST['author']; 
-    $journal = $_POST['journal'];
-    $year = $_POST['date']; 
-    $abstract = $_POST['abstract'];
-    $link = $_POST['link']; 
-    $rating = $_POST['rating']; 
-    $rateReason = $_POST['reason'];
-	$rater = $_POST['aurate']; 
-	$researchLevel = $_POST['researchL'];
-	$methodology = 	$_POST['methodology'];
-	$practise = $_POST['practise'];
-	$evBenefit = $_POST['benefits'];
-	$evContext = $_POST['context'];
-	$evResult = $_POST['result'];
-	$integrity = $_POST['integrity']; 
-	$conRate = $_POST['conrating'];
-	$evRateReason = $_POST['conreason'];
-	$evRater =	$_POST['conrate'];
-	$reQuestion = $_POST['reques'];
-	$reMethod = $_POST['method'];
-	$reMetrics = $_POST['metrics'];
-	$participant = 	$_POST['participants'];
+    $title = $_POST['title'].trim(); 
+    $author = $_POST['author'].trim(); 
+    $journal = $_POST['journal'].trim();
+    $year = $_POST['date'].trim(); 
+    $abstract = $_POST['abstract'].trim();
+    $link = $_POST['link'].trim(); 
+    $rating = $_POST['rating'].trim(); 
+    $rateReason = $_POST['reason'].trim();
+	$rater = $_POST['aurate'].trim(); 
+	$researchLevel = $_POST['researchL'].trim();
+	$methodology = 	$_POST['methodology'].trim();
+	$practise = $_POST['practise'].trim();
+	$evBenefit = $_POST['benefits'].trim();
+	$evContext = $_POST['context'].trim();
+	$evResult = $_POST['result'].trim();
+	$integrity = $_POST['integrity'].trim(); 
+	$conRate = $_POST['conrating'].trim();
+	$evRateReason = $_POST['conreason'].trim();
+	$evRater =	$_POST['conrate'].trim();
+	$reQuestion = $_POST['reques'].trim();
+	$reMethod = $_POST['method'].trim();
+	$reMetrics = $_POST['metrics'].trim();
+	$participant = 	$_POST['participants'].trim();
 
     //Sql command
 	$query = "INSERT INTO $table". "(title,author,journal,dateYear,abstract,link,rating,rateReason,rater,researchLevel,methodology,practice,evBenefit,
