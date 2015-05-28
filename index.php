@@ -37,7 +37,7 @@
         Below is a list of topic you'd typically find in Software Engineering. Browse by clicking on an individual topic to reveal a list of papers
             that relate to that topic. You're also welcome to use our search engine to find a specific paper. <br><br>
 
-    <form action="searchProcess.php"id="papfrm" method="post">
+    <form action="searchPaperProcess.php"id="papfrm" method="get">
         <input type="text" name="search"><input type="submit" name="submit" value="Search"> <br><br> <a href="advanced.html">Advanced Search</a>
     </form>
 

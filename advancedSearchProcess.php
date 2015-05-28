@@ -1,9 +1,9 @@
 <?php
 require_once('connect.php');
 
-    $title = $_POST['title'].trim(); 
-    $author = $_POST['author'].trim(); 
-    $journal = $_POST['journal'].trim();
+    $title = $_GET['title'].trim(); 
+    $author = $_GET['author'].trim(); 
+    $journal = $_GET['journal'].trim();
     $year = $_POST['date'].trim();
 
     //checks if connection is established 
@@ -13,8 +13,9 @@ require_once('connect.php');
 	//Generates the query to be sent to mysql 
     else {
 	
-	    $query = "SELECT title FROM $table WHERE title LIKE '%".$title."%'AND (author = '".$author."' OR journal = '".$journal."' OR dateYear = '".$year."')";
-    
+	    //$query = "SELECT title FROM $table WHERE title LIKE '%".$title."%' AND (author = '".$author."' OR journal = '".$journal."' OR dateYear = '".$year."')";
+        
+        $query = "SELECT * from $table";
         $result = mysqli_query($conn, $query);
 	
 	    if (!$result) {
