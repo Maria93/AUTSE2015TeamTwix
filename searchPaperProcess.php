@@ -10,7 +10,7 @@ if(!$conn) {
         </p>";
     }//Generates the query to be sent to mysql 
     else {        
-        $query = "SELECT * from $table where title = ' $title'";
+        $query = "SELECT * from $table where title LIKE '% $title%'";
         $result = mysqli_query($conn, $query);
 	
 	    if (!$result) {
@@ -21,6 +21,8 @@ if(!$conn) {
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
                 echo "Book Title: ",$row['title'],"<br>";
+                echo "Link: <a target='_blank' href='",$row['link'],"'>Full Article</a> <br>";
+                echo "<hr>";
             }
 
             $result = mysqli_query($conn, $query);

@@ -1,41 +1,77 @@
 <?php
+
 require_once('connect.php');
 
+
+
     $title = $_GET['title'].trim(); 
+
     $author = $_GET['author'].trim(); 
+
     $journal = $_GET['journal'].trim();
-    $year = $_POST['date'].trim();
+
+    $year = $_GET['date'].trim();
+
+
 
     //checks if connection is established 
+
     if(!$conn) {
+
         echo "<p>Sorry but we could not find what you are looking for at this time. Please try again later.</p>";
+
     }
+
 	//Generates the query to be sent to mysql 
+
     else {
+
 	
-	    //$query = "SELECT title FROM $table WHERE title LIKE '%".$title."%' AND (author = '".$author."' OR journal = '".$journal."' OR dateYear = '".$year."')";
-        
-        $query = "SELECT * from $table";
+
+	    $query = "SELECT * FROM $table WHERE title LIKE '% $title%' OR author LIKE '% $author%' OR journal LIKE '% $journal%' OR dateYear = ' $year'";
+
         $result = mysqli_query($conn, $query);
+
 	
+
 	    if (!$result) {
 
+
+
             echo "<p>Something is wrong with ",	$query, "</p>";
+
             
+
         } else {
+
             // output data of each row
+
             while($row = mysqli_fetch_assoc($result)) {
+
                 echo "Book Title: ",$row['title'],"<br>";
+
+                echo "Link: <a target='_blank' href='",$row['link'],"'>Full Article</a> <br>";
+
+                echo "<hr>";
+
             }
+
+
 
             $result = mysqli_query($conn, $query);
             $rownull = mysqli_fetch_assoc($result);
             if($rownull == null) {
 			    echo "There are no books to display";
 		    } 
+
         }
+
         mysqli_close($conn);
+
     }
+
 	 
+
 	
+
 ?> 
