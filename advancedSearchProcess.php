@@ -1,3 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	</head>
+	<body>
+        <img id="logo" src="autLogo.png" alt="HTML5 Icon" style="width:200px;height:200px">
+		
+        <div id="header">
+            <h1>SERLER</h1>
+        </div>
+
+<div id="nav">
+            <ul>
+                <li> <a style="color: #fff" href="index.php">Home</a> </li>
+                <li> <a style="color: #fff" href="login.html">Login</a> </li>
+                <li> <a style="color: #fff" href="addPaper.html">Submit Article</a> </li>
+                <li> <a style="color: #fff" href="about.html">About</a> </li>
+                <li> <a style="color: #fff" href="help.html">Support Team</a> </li>
+            </ul>
+    
+    <br> <br>
+</div>
+
+<div id="section">
 <?php
 
 require_once('connect.php');
@@ -75,3 +101,11 @@ require_once('connect.php');
 	
 
 ?> 
+</div>
+<div id="footer">
+    <p style="float: right"> <span> Team Twix(c) 2015, Jaspreet Walia, Jean-Yves Kwibuka, Maria Samuelu and Siatua Uili </span></p>
+</div>
+</body>
+</html>
+
+

@@ -28,11 +28,6 @@
 		<input type="text" name="journal" required placeholder="journal"> Journal<br><br>
         <textarea name="abstract" form="papfrm" required placeholder="abstract" cols="22"> </textarea> Abstract<br><br>
 		<input type="number" name="date" required placeholder="2005"> Publication Date <br><br>
-		<input type="text" name="title" placeholder="paper title"> Title <br><br>
-		<input type="text" name="author" placeholder="author"> Author<br><br>
-		<input type="text" name="journal" placeholder="journal"> Journal<br><br>
-        <textarea name="abstract" form="papfrm" placeholder="abstract" cols="22"> </textarea> Abstract<br><br>
-		<input type="number" name="date" placeholder="2005"> Publication Date <br><br>
 		
             <h2>Full paper</h2>
 		<input type="text" name="link" required placeholder="https/link"> Paper link <br><br>
@@ -46,8 +41,6 @@
 		 </select> Credibility Rating<br><br>
 		<textarea name="reason" required form="papfrm" cols="22"> </textarea> Reason for given Rating <br><br> 
 		<input type="text" required name="aurate"> Who Rated it<br><br>
-		<textarea name="reason" form="papfrm" cols="22"> </textarea> Reason for given Rating <br><br> 
-		<input type="text" name="aurate"> Who Rated it<br><br>
             
             <h2>Empirical Research</h2>
 		<select name="researchL" style="margin-right: 110px">
@@ -55,11 +48,6 @@
 			<option value="medium">Medium</option> 
 			<option value="Low">Low</option> 
 		</select>Research Level<br><br>
-
-		<input type="text" name="methodology" required placeholder="methodolgy name"> &nbsp; Software Development Methodology <br>
-            <textarea name="methoddesc" form="papfrm" required placeholder="methodology descripiton" cols="22"></textarea><br><br>
-		<input type="text" name="practise" required placeholder="investigated practice"> &nbsp; Standard Practise(Investigated) <br>
-            <textarea name="pracdesc" form="papfrm" required placeholder="standard description" cols="22"></textarea><br><br>
 		<textarea name="benefits" form="papfrm" required placeholder="benefits" cols="22"></textarea> Benefit being Tested<br><br> 
 		<textarea name="context" form="papfrm" required placeholder="context" cols="22"></textarea> Context of the Study<br><br>
 		<textarea name="result" form="papfrm" required placeholder="results" cols="22"></textarea> Result of the Study<br><br>
@@ -67,10 +55,33 @@
              
             <h2>About Research</h2>
 		<textarea name="reques" form="papfrm" required placeholder="what's being investigated" cols="22"></textarea> Research Question: <br><br>
-		<input type="text" name="method" required placeholder="method"> Research Method<br><br>
+		<select name="methoddesc" >
+                <optgroup label="RESEARCH METHOD" >
+                    <option value="" disabled selected>Select a Standard Research Method</option>
+                    <option value="Research">Qualitative</option>
+                    <option value="Research">Quantitative</option>
+                    <option value="Research">Correlation/Regression Analysis</option>
+                    <option value="Research">Quasi-Experimental</option>
+                    <option value="Research">Experimental</option>
+                    <option value="Research">Meta-Analysisnt</option>
+                </optgroup>
+            </select><br>
+			<input type="text" name="method" placeholder="Research Method"> &nbsp; OR Specify<br><br>
 		<textarea name="metrics" form="papfrm" required placeholder="metrics" cols="22"></textarea> Research Metrics<br><br>
 		<input type="text" required name="participants">  Nature of participants<br><br>
-		<input type="text" name="methodology" placeholder="methodolgy name"> &nbsp; Software Development Methodology <br>
+		<select name="methodologydesc" >
+                <optgroup label="METHODOLOGY" >
+                    <option value="" disabled selected>Select a Standard Software Development Methodology</option>
+                    <option value="Research">Scrum</option>
+                    <option value="Research">Ad-hoc</option>
+                    <option value="Research">Waterfall</option>
+                    <option value="Research">Prototype</option>
+                    <option value="Research">Iterative</option>
+                    <option value="Research">Agile</option>
+					<option value="Research">Totalitarian</option>
+                </optgroup>
+            </select><br>
+		<input type="text" name="methodology" placeholder="methodolgy name"> &nbsp; OR Specify <br>
             <textarea name="methoddesc" form="papfrm" placeholder="methodology descripiton" cols="22"></textarea><br><br>
 		
             <select name="pracdesc" >
@@ -107,6 +118,7 @@
 		<input type="submit" name="post" value="Submit article">								  
 										  
 		</form>
+		
 		
 	</div>
 	<div id="footer">
