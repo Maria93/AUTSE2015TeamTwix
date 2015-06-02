@@ -48,33 +48,41 @@
     $title = $_POST['title'].trim(); 
     $author = $_POST['author'].trim(); 
     $journal = $_POST['journal'].trim();
-    $year = $_POST['date'].trim(); 
-    $abstract = $_POST['abstract'].trim();
-    $link = $_POST['link'].trim(); 
-    $rating = $_POST['rating'].trim(); 
+    $year = $_POST['date'].trim();
+    $rating = $_POST['rating'].trim();  
     $rateReason = $_POST['reason'].trim();
 	$rater = $_POST['aurate'].trim(); 
 	$researchLevel = $_POST['researchL'].trim();
-	$methodology = 	$_POST['methodology'].trim();
-	$practise = $_POST['practise'].trim();
-	$evBenefit = $_POST['benefits'].trim();
-	$evContext = $_POST['context'].trim();
+
+    $link = $_POST['link'].trim();
+    
+    $practise = $_POST['practise'].trim(); 
+
+    $evBenefit = $_POST['benefits'].trim();
+	$evContextWho = $_POST['contextWho'].trim();
+    $evContextWhat = $_POST['contextWhat'].trim();
+    $evContextWhere = $_POST['contextWhere'].trim();
+    $evContextWhen = $_POST['contextWhen'].trim();
+    $evContextHow = $_POST['contextHow'].trim();
+    $evContextWhy = $_POST['contextWhy'].trim();
 	$evResult = $_POST['result'].trim();
-	$integrity = $_POST['integrity'].trim(); 
-	$conRate = $_POST['conrating'].trim();
+	$integrity = $_POST['integrity'].trim();
+    $conRate = $_POST['conrating'].trim();
+    $evRater =	$_POST['conrater'].trim();
 	$evRateReason = $_POST['conreason'].trim();
-	$evRater =	$_POST['conrate'].trim();
-	$reQuestion = $_POST['reques'].trim();
+
+    $reQuestion = $_POST['reques'].trim();
 	$reMethod = $_POST['method'].trim();
-	$reMetrics = $_POST['metrics'].trim();
+    $reMetrics = $_POST['metrics'].trim();
 	$participant = 	$_POST['participants'].trim();
+	
+	 
 
     //Sql command
-	$query = "INSERT INTO $table". "(title,author,journal,dateYear,abstract,link,rating,rateReason,rater,researchLevel,methodology,practice,evBenefit,
-                                evContext, evResult,integrity,conRate,evRateReason,evRater,reQuestion,reMethod,reMetrics,participant)". 
-	"VALUES"."('$title', '$author', '$journal', '$year', '$abstract', '$link', '$rating', '$rateReason', '$rater', '$researchLevel', '$methodology',
-			'$practise', '$evBenefit', '$evContext', '$evResult', '$integrity', '$conRate', '$evRateReason', '$evRater', '$reQuestion', '$reMethod',
-            '$reMetrics', '$participant')";
+	$query = "INSERT INTO $table". "(title,author,journal,dateYear,rating,rateReason,rater,researchLevel,link,practice,evBenefit,
+                                evContextWho,evContextWhat,evContextWhere,evContextWhen,evContextHow,evContextWhy, evResult,integrity,conRate,evRater,evRateReason,reQuestion,reMethod,reMetrics,participant)". 
+	"VALUES"."('$title', '$author', '$journal', '$year', '$rating', '$rateReason', '$rater', '$researchLevel', '$link', '$practise', 
+                '$evBenefit', '$evContextWho', '$evContextWhat', '$evContextWhere', '$evContextWhen', '$evContextHow', '$evContextWhy', '$evResult', '$integrity', '$conRate', '$evRater','$evRateReason', '$reQuestion', '$reMethod', '$reMetrics', '$participant')";
 
     //executes the query
     $result = mysqli_query($conn, $query); 
