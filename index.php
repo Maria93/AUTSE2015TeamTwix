@@ -43,8 +43,8 @@
 
     <div id="browseSection">
             <h3 style="padding: 5px">
-                Browse our catalogue of Empirical Studies topics:
-                <hr>
+                Browse our catalogue of our highly rated Empirical Studies:
+                </hr>
             </h3>
             <!-- THIS IS WHERE THE BROWSABLE PAPERS WILL BE DISPLAYED. -->
 <?php
@@ -55,15 +55,35 @@
 	if (!$conn) {
     echo "<p>Database connection failure</p>";
 	} else {
-		$query = "select * from $table";
+		$query = "SELECT * FROM $table WHERE rating >= 4 ORDER BY title";
 		$result = mysqli_query($conn, $query);
 		if(!$result) {
 
 			echo "<p>Something is wrong with ",	$query, "</p>";
 			} else {
 
-		    while ($row = mysqli_fetch_array($result)){	 
-			    echo "<p>";
+            echo "<table border=1>
+            <tr>
+            <th> TITLE</th>
+            <th> AUTHOR</th>
+            <th> JOURNAL</th>
+            <th> YEAR</th>
+            <th> LINK</th>
+            <th> RATING</th>";
+		    while ($row = mysqli_fetch_array($result)){	
+                
+                //new row
+                echo "<tr>";
+                echo "<td>" . $row['title'] . "</td>";
+                echo "<td>" . $row['author'] . "</td>";
+                echo "<td>" . $row['journal'] . "</td>";
+                echo "<td>" . $row['year'] . "</td>";
+                echo "<td>" . "<a target='_blank' href='" . $row['link'] . "'>Full Article</a>" . "</td>";
+                echo "<td>" . $row['rating'] . "</td>";
+                echo "</tr>";
+            
+
+			  /*  echo "<p>";
 
 						    //echo "ID: ",$row["ID"],"<br>";
 
@@ -115,9 +135,10 @@
 
 						    echo "<hr>";
 
-				echo"</p>";
+				echo"</p>";   */
 
 		     }
+             echo "</table>";
 
 
 
