@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Home Page</title>
+		<title>SERLER Home</title>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	</head>
 	<body>

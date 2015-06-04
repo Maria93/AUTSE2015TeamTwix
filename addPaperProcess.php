@@ -56,7 +56,7 @@
 
     $link = $_POST['link'].trim();
     
-    $practice = $_POST['practise'].trim(); 
+    $practice = $_POST['practice'].trim(); 
 
     $evBenefit = $_POST['benefits'].trim();
 	$evContextWho = $_POST['contextWho'].trim();
@@ -80,7 +80,7 @@
 
     //Sql command
 	$query = "INSERT INTO $table". "(title,author,journal,year,rating,rateReason,rater,researchLevel,link,practice,evBenefit,
-                                evContextWho,evContextWhat,evContextWhere,evContextWhen,evContextHow,evContextWhy, evResult,integrity,conRate,evRater,evRateReason,reQuestion,reMethod,reMetrics,participant)". 
+                                contextWho,contextWhat,contextWhere,contextWhen,contextHow,contextWhy, evResult,integrity,conRate,evRater,evRateReason,reQuestion,reMethod,reMetrics,participant)". 
 	"VALUES"."('$title', '$author', '$journal', '$year', '$rating', '$rateReason', '$rater', '$researchLevel', '$link', '$practice', '$evBenefit', '$evContextWho', '$evContextWhat', '$evContextWhere', 
                '$evContextWhen', '$evContextHow', '$evContextWhy', '$evResult', '$integrity', '$conRate', '$evRater','$evRateReason', '$reQuestion', '$reMethod', '$reMetrics', '$participant')";
 
